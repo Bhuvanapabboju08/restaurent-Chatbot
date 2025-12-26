@@ -1,0 +1,37 @@
+{
+  "name": "restaurant-backend",
+  "version": "1.0.0",
+  "description": "Restaurant ordering system backend with real-time updates",
+  "main": "server.js",
+  "scripts": {
+    "build": "npm install",
+    "start": "node server-postgres.js",
+    "dev": "nodemon server-postgres.js",
+    "init-db": "node database/init.js",
+    "start:mongo": "node server.js",
+    "dev:mongo": "nodemon server.js"
+  },
+  "keywords": [
+    "restaurant",
+    "ordering",
+    "socket.io",
+    "real-time"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.37.0",
+    "mongoose": "^8.19.2",
+    "openai": "^6.10.0",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
